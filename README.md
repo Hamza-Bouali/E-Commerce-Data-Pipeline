@@ -1,5 +1,5 @@
 
-# 🛒 E-Commerce Data Pipeline (No Kafka)
+# 🛒 E-Commerce Data Pipeline
 
 A near-real-time data engineering pipeline that simulates an e-commerce platform. It ingests, transforms, stores, and visualizes customer and sales data using modern data stack tools — **without using Kafka**.
 
