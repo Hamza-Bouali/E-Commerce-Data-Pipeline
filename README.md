@@ -20,15 +20,13 @@ This project demonstrates an end-to-end data pipeline:
 ## 🧱 Architecture
 ```mermaid
 flowchart TD
-    A[Data Generator\n(Python script)] -->|Writes CSV files| B[Raw Data Folder\n(data/streaming/)]
-    B -->|Watches folder| C[PySpark Structured Streaming]
-    C --> D[Transformations\n(e.g. Aggregation, Filtering)]
-    D --> E1[Parquet Files\n(S3 or Local)]
-    D --> E2[PostgreSQL DB\nor BigQuery]
-    E2 --> F[Analytics Dashboard\n(Superset / Metabase)]
+    A[Data Generator (Python Script)] --> B[Raw Data Folder (data/streaming/)]
+    B --> C[PySpark Structured Streaming]
+    C --> D[Transformations (Aggregation, Filtering)]
+    D --> E1[Parquet Files (S3 or Local)]
+    D --> E2[PostgreSQL or BigQuery]
+    E2 --> F[Analytics Dashboard (Superset or Metabase)]
 
-    classDef component fill:#f9f,stroke:#333,stroke-width:1px;
-    class A,B,C,D,E1,E2,F component;
 ```
 
 ---
