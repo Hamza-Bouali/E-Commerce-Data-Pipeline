@@ -26,7 +26,6 @@ flowchart TD
     D --> E1[Parquet Files (S3 or Local)]
     D --> E2[PostgreSQL or BigQuery]
     E2 --> F[Analytics Dashboard (Superset or Metabase)]
-
 ```
 
 ---
