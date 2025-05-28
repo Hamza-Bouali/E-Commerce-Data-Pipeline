@@ -20,7 +20,7 @@ This project demonstrates an end-to-end data pipeline:
 ## 🧱 Architecture
 ```mermaid
 graph TD
-  A[Data Generator - Python Script] --> B[Raw CSV Folder - data/streaming/]
+  A[Data Generator - Python Script (realtime data generation simulation)] --> B[Raw CSV Folder - data/streaming/]
   B --> C[PySpark Structured Streaming]
   C --> D[Transformations - Aggregation & Filtering]
   D --> E1[Output - Parquet Files]
